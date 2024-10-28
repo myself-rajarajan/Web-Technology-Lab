@@ -1,0 +1,113 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="ATMManagementSystem">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="ATM" maxOccurs="10" minOccurs="1">
+                    <xsd:complexType>
+                        <xsd:sequence>
+
+                            <!-- ATM ID with pattern ATM followed by 3 digits -->
+                            <xsd:element name="atmId">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="ATM[0-9]{3}"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <!-- Location element with validation for specific cities -->
+                            <xsd:element name="location">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:enumeration value="New York"/>
+                                        <xsd:enumeration value="Los Angeles"/>
+                                        <xsd:enumeration value="Chicago"/>
+                                        <xsd:enumeration value="Houston"/>
+                                        <xsd:enumeration value="San Francisco"/>
+                                        <xsd:enumeration value="Miami"/>
+                                        <xsd:enumeration value="Dallas"/>
+                                        <xsd:enumeration value="Boston"/>
+                                        <xsd:enumeration value="Seattle"/>
+                                        <xsd:enumeration value="San Diego"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <!-- Bank Name with allowed bank options -->
+                            <xsd:element name="bankName">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:enumeration value="ABC Bank"/>
+                                        <xsd:enumeration value="XYZ Bank"/>
+                                        <xsd:enumeration value="LMN Bank"/>
+                                        <xsd:enumeration value="PQR Bank"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <!-- Currency Type, fixed to USD -->
+                            <xsd:element name="currencyType">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:enumeration value="USD"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <!-- Max Withdrawal Amount with range validation (100-2000) -->
+                            <xsd:element name="maxWithdrawalAmount">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:integer">
+                                        <xsd:minInclusive value="100"/>
+                                        <xsd:maxInclusive value="2000"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <!-- Min Balance with a minimum of 0 -->
+                            <xsd:element name="minBalance">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:integer">
+                                        <xsd:minInclusive value="0"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <!-- Last Maintenance Date, ensuring past or present date -->
+                            <xsd:element name="lastMaintenanceDate" type="xsd:date" />
+
+                            <!-- Status with enumerations: Active or Inactive -->
+                            <xsd:element name="status">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:enumeration value="Active" />
+                                        <xsd:enumeration value="Inactive" />
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <!-- Service Contact with a 10-digit number pattern -->
+                            <xsd:element name="serviceContact">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="[0-9]{10}"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <!-- Working hours with time pattern (e.g., 09:00-21:00) -->
+                            <xsd:element name="workingHours">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="[0-2][0-9]:[0-5][0-9]-[0-2][0-9]:[0-5][0-9]"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
