@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+</head>
+<body>
+<h2>Select Items to Add to Cart</h2>
+<form method="get" action="CartServlet">
+<label for="item">Item:</label>
+<input type="text" id="item" name="item" required><br><br>
+<input type="submit" value="Add to Cart">
+</form>
+<br>
+<form method="get" action="ViewCartServlet">
+<input type="submit" value="View Cart">
+</form>
+</body>
+</html>
