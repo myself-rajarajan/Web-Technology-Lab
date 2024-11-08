@@ -3,7 +3,7 @@
 <ATMManagementSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="new 2.xsd">
     <ATM>
         <atmId>ATM001</atmId>
-        <location>New York/location>
+        <location>New York</location>
         <bankName>ABC Bank</bankName>
         <currencyType>USD</currencyType>
         <maxWithdrawalAmount>1000</maxWithdrawalAmount>
