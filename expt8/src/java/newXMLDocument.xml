@@ -1,0 +1,46 @@
+<employees>
+    <employee>
+        <id>1</id>
+        <name>Walter White</name>
+        <role>High School Teacher / Drug Kingpin</role>
+        <department>Chemistry</department>
+        <salary>50000</salary>
+    </employee>
+    <employee>
+        <id>2</id>
+        <name>Jesse Pinkman</name>
+        <role>Former Student / Meth Cook</role>
+        <department>Chemistry</department>
+        <salary>40000</salary>
+    </employee>
+    <employee>
+        <id>3</id>
+        <name>Skyler White</name>
+        <role>Accountant / Housewife</role>
+        <department>Accounting</department>
+        <salary>45000</salary>
+    </employee>
+    <employee>
+        <id>4</id>
+        <name>Saul Goodman</name>
+        <role>Criminal Lawyer</role>
+        <department>Legal</department>
+        <salary>120000</salary>
+    </employee>
+    <employee>
+        <id>5</id>
+        <name>Hank Schrader</name>
+        <role>DEA Agent</role>
+        <department>DEA</department>
+        <salary>80000</salary>
+    </employee>
+    <employee>
+        <id>6</id>
+        <name>Gus Fring</name>
+        <role>Drug Lord / Business Owner</role>
+        <department>Business</department>
+        <salary>150000</salary>
+    </employee>
+</employees>
+
+
