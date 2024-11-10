@@ -1,0 +1,7 @@
+Installation software for WTLab - IT dept
+
+1. NetBeans 22: https://archive.apache.org/dist/netbeans/netbeans-installers/22/Apache-NetBeans-22-bin-windows-x64.exe
+2. Apache Tomcat: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.31/bin/apache-tomcat-10.1.31-windows-x64.zip
+3. MySQL installer: https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.40.0.msi
+4. MySQL connector: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-j-9.1.0.zip
+5. Notepad++: https://notepad-plus-plus.org/downloads/v8.7.1/
