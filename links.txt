@@ -1,16 +1,19 @@
 Installation software for WTLab - IT dept
 
-1. VSCode:          https://code.visualstudio.com/download
-2. NetBeans 22:     https://archive.apache.org/dist/netbeans/netbeans-installers/22/Apache-NetBeans-22-bin-windows-x64.exe
-3. Apache Tomcat:   https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.31/bin/apache-tomcat-10.1.31-windows-x64.zip
-4. MySQL installer: https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.40.0.msi
-5. MySQL connector: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-j-9.1.0.zip
-6. Notepad++:       https://notepad-plus-plus.org/downloads/v8.7.1/
-7. NodeJS:          https://nodejs.org/dist/v22.11.0/node-v22.11.0-x64.msi
-8. Angular:         npm install -g @angular/cli@16
+01. VSCode:          https://code.visualstudio.com/download
+02. NetBeans 22:     https://archive.apache.org/dist/netbeans/netbeans-installers/22/Apache-NetBeans-22-bin-windows-x64.exe
+03. Apache Tomcat:   https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.31/bin/apache-tomcat-10.1.31-windows-x64.zip
+04. MySQL installer: https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.40.0.msi
+05. MySQL connector: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-j-9.1.0.zip
+06. Notepad++:       https://notepad-plus-plus.org/downloads/v8.7.1/
+07. NodeJS:          https://nodejs.org/dist/v22.11.0/node-v22.11.0-x64.msi
+08. Angular:         npm install -g @angular/cli@16
                     ng new rajarajan --no-standalone
                     Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
                     ng new my-app
                     cd my-app
                     ng generate component login
                     ng serve
+09. Java JDK 8u201 for netbeans:                                    
+10. MYSQL connector older version for web server:      https://downloads.mysql.com/archives/get/p/3/file/mysql-connector-java-8.0.24.zip
+11. 
